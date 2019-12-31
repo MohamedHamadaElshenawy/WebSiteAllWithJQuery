@@ -1,2 +1,2 @@
 # WebSiteAllWithJQuery
-take a lookfrom here "https://mohamedhamadaelshenawy.github.io/WebSiteAllWithJQuery/"
+take a look from here "https://mohamedhamadaelshenawy.github.io/WebSiteAllWithJQuery/"
