@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JQuery</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        
+        <!-- Start of Navbar -->
+        <ul class="navbar">
+            <li><a href="#" data-scroll="one">Home</a></li>
+            <li><a href="#" data-scroll="two">Content List</a></li>
+            <li><a href="#" data-scroll="three">Contact Us</a></li>
+            <li><a href="#" data-scroll="four">Shuffle Cards</a></li>
+            <li><a href="#" data-scroll="five">Thanks</a></li>
+        </ul>
+        <!-- End of Navbar -->
+        
+        <!-- Start of Side Menu -->
+        <div class="menu">
+            <button class="menu-btn">Menu</button>
+            <h2>Change Colors</h2>
+            <ul class="changecolor">
+                <li data-color="#d96459"></li>
+                <li data-color="#667292"></li>
+                <li data-color="#588c7e"></li>
+                <li data-color="#f2e394"></li>
+            </ul>
+        </div>
+        <!-- End of side menu -->
+        
+        <!-- Start of home section -->
+        <div id="one" class="block">
+            <h2>Home</h2>
+            <span class="show" data-popup="first">Show first popup</span>
+            <span class="show" data-popup="second">Show second popup</span>
+            
+            <div class="btn-effect">
+                <button class="allbtns from-left">
+                    <span></span>
+                    <span>Download</span>
+                </button>
+            </div>
+            
+            <div class="progress dark">
+                <span data-progress="85"></span>
+            </div>
+            <div class="progress light">
+                <span data-progress="65"></span>
+            </div>
+            
+            <div class="gallary">
+                <button class="next-slide">Next</button>
+                <button class="prev-slide">Previous</button>
+                <div class="big">
+                    <img src="images/1.png" alt="big image"/>
+                </div>
+                <div class="small">
+                    <img class="selected" src="images/1.png" alt="small image"/>
+                    <img src="images/2.png" alt="small image"/>
+                    <img src="images/3.png" alt="small image"/>
+                    <img src="images/4.png" alt="small image"/>
+                </div>
+            </div>
+            
+        </div>
+        <!-- End of home section -->
+        
+        <!-- Start of Content List section -->
+        <div id="two" class="block">
+            <h2>Content List</h2>
+            
+            <div class="view-btns">
+                <button class="grid-btn">Grid</button>
+                <button class="list-btn">list</button>
+            </div>
+            
+            <div class="items list-view">
+                <div>
+                    <h2>Item 1</h2>
+                    <img src="https://www.placehold.it/200/300" alt="item one"/>
+                    <p>Description of this item</p>
+                </div>
+                <div>
+                    <h2>Item 2</h2>
+                    <img src="https://www.placehold.it/200/300" alt="item two"/>
+                    <p>Description of this item</p>
+                </div>
+                <div>
+                    <h2>Item 3</h2>
+                    <img src="https://www.placehold.it/200/300" alt="item three"/>
+                    <p>Description of this item</p>
+                </div>
+                <div>
+                    <h2>Item 4</h2>
+                    <img src="https://www.placehold.it/200/300" alt="item four"/>
+                    <p>Description of this item</p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- End of Content List section -->
+        
+        <!-- Start of Contact Us section -->
+        <div id="three" class="block">
+            <h2>Contact Us</h2>
+            
+            <form class="myform">
+                <div>
+                    <input type="text" required="required" placeholder="Write your name"/>
+                    <span class="message">Please fill this field</span>
+                </div>
+                
+                <div>
+                    <input type="password" required="required" placeholder="Set your password"/>
+                    <span class="message">Please fill this field</span>
+                </div>
+                
+                <div>
+                    <input type="email" required="required" placeholder="Write your email"/>
+                    <span class="message">Please fill this field</span>
+                </div> 
+                
+                <div>
+                <textarea placeholder="Type your message here" required="required" rows="10"></textarea>
+                <span class="message">Please fill this field</span>
+                </div>
+                
+                <div>
+                    <input class="add-tags" type="text" placeholder="Add tages here, Seperate by [ , ]"/>
+                    <div class="tags"></div>
+                </div> 
+                
+                <input type="file"/>
+                <input type="submit" value="Send"/>
+                
+            </form>
+        </div>
+        <!-- End of Contact Us section -->
+        
+        <!-- Start of Shuffle Cards section -->
+        <div id="four" class="block">
+            <h2>Shuffle Cards</h2>
+            
+            <div class="cards">
+                <div class="card card-one"></div>
+                <div class="card card-two"></div>
+                <div class="card card-three"></div>
+                <div class="card card-four"></div>
+                <div class="card card-five"></div>
+            </div>
+            
+        </div>
+        <!-- End of Shuffle Cards section -->
+        
+        <!-- Start of thanks section -->
+        <div id="five" class="block">
+            <h2>Thanks</h2>
+            <p class="typer" data-text=" Thank you for visiting my site and i hope that you have enjoed it.">Reload the page to see how i want to</p>
+        </div>
+        <!-- End of thanks section -->
+        
+        <button class="up">Up</button><!-- up button scroll to the top of page -->
+        
+        <!-- Start of popups -->
+        <div class="popup first">
+            <div class="inner">
+                <h2>This is our first popup</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+                <button class="close">Close</button>
+            </div>
+        </div>
+        
+        <div class="popup second">
+            <div class="inner">
+                <h2>This is our second popup</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+                <button class="close">Close</button>
+            </div>
+        </div>
+        <!-- End of popups -->
+        
+        
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

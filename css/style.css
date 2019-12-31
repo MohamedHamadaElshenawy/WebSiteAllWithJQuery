@@ -1,0 +1,464 @@
+body{
+    background-color: #c4b7a6;
+}
+
+/* Styling the navbar*/
+ul.navbar{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #fefbd8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+ul.navbar li{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+}
+.active{
+    color: #bc5a45;
+}
+
+/* Styling the side menu*/
+.menu{
+    background-color: #484f4f;
+    color: white;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: -320px;
+    top: 0;
+    padding: 10px;
+    z-index: 99999;
+}
+.menu .menu-btn{
+    background-color: #484f4f;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 20%;
+    border: 1px solid #484f4f;
+    cursor: pointer;
+    position: absolute;
+    top: 8%;
+    left: 97%;
+    width: 75px;
+}
+.changecolor{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.changecolor li{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 7px;
+    cursor: pointer; 
+}
+.changecolor [data-color="#d96459"]{
+    background-color: #d96459;
+}
+.changecolor [data-color="#667292"]{
+    background-color: #667292;
+}
+.changecolor [data-color="#588c7e"]{
+    background-color: #588c7e;
+}
+.changecolor [data-color="#f2e394"]{
+    background-color: #f2e394;
+}
+
+/* Styling the blocks of the site*/
+.block{
+    margin: 30px auto;
+    padding-top: 30px;
+    background-color: #e6e2d3;
+    border: 2px solid #b9b0b0;
+    min-height: 600px;
+    width: 90%;
+}
+.block h2{
+    text-align: center;
+}
+
+/* Styling the popup show button*/
+.block .show{
+    margin: 25px 0 15px 25px;
+    background-color: #454140;
+    border: 1px solid #454140;
+    color: white;
+    padding: 11px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    width: 170px;
+    text-align: center;
+    
+}
+
+/* Styling the buttons in home block*/
+.allbtns{
+    margin: 20px 0 0 35px;
+    background-color: #4f3222;
+    border: 1px solid #4f3222;
+    color: white;
+    padding: 11px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 170px;
+    position: relative;
+    overflow: hidden;
+}
+.allbtns span:first-child{
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+}
+.allbtns span:last-child{
+    position: relative;
+    z-index: 2;
+}
+
+/* Styling the progress in home block*/
+.progress{
+    margin: 30px 0 0 25px;
+    height: 30px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    font-size: larger;
+    line-height: 30px;
+    text-indent: 20px;
+}
+.dark span{
+    height: 100%;
+    width: 0%;
+    background-color: #c94c4c;
+    display: block;
+}
+.light span{
+    height: 100%;
+    width: 0%;
+    background-color: #3b3a30;
+    display: block;
+}
+
+/* Styling the slider in home block*/
+.gallary{
+    position: relative;
+    width: 75%;
+    margin: 25px auto;
+    border: 2px solid #625750;
+    padding: 4px;
+    background-color: #c6bcb6;
+}
+.gallary button{
+    position: absolute;
+    background-color: #009688;
+    border: 1px solid #009688;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    user-select: none;
+    width: 12%;
+    margin: 5px;
+    z-index: 2;
+}
+.gallary .next-slide{
+    right: 3px;
+}
+.gallary img{
+    max-width: 100%;
+}
+.gallary .small{
+    margin-top: 3px;
+    overflow: hidden;
+}
+.gallary .small img{
+    width: 23.9%;
+    float: left;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    opacity: .5;
+}
+.gallary .small img.selected{
+    border: 2px solid ghostwhite;
+    opacity: 1;
+}
+.gallary .small img:not(:last-child){
+    margin-right: .87%;
+}
+
+/* Styling the up button*/
+.up{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    background-color: #c83349;
+    color: white;
+    padding: 7px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px solid #c83349;
+    cursor: pointer;
+}
+
+/* Styling the popup message*/
+.popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(187,187,187,0.8);
+}
+.popup .inner{
+    background-color: white;
+    border: 1px solid lavender;
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    left: 50%;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: -135px;
+    text-align: center;
+    color: #666;
+    border-radius: 75px;
+}
+.popup .inner p{
+    margin-top: 25px;
+}
+.popup .inner .close{
+    margin-top: 7px;
+    background-color: #222;
+    border: 1px solid #222;
+    color: orange;
+    padding: 10px;
+    font-size: large;
+    width: 90px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* Styling the list view of the items*/
+.items.list-view div{
+    position: relative;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #484f4f;
+    background-color: #c6bcb6;
+}
+.items.list-view div h2{
+    position: absolute;
+    left: 250px;
+}
+.items.list-view div p{
+    position: absolute;
+    top: 130px;
+    left: 250px;
+}
+
+/* Styling the grid view of the items*/
+.items.grid-view div{
+    padding: 10px;
+    border: 1px solid #484f4f;
+    display: inline-block;
+    float: left;
+    width: 240px;
+    margin: 0 15px;
+    text-align: center;
+    background-color: #c6bcb6;
+}
+.view-btns{
+    position: relative;
+    margin-bottom: 80px;
+}
+.view-btns button{
+    position: absolute;
+}
+
+/* Styling the grid button*/
+.grid-btn{
+    background-color: #484f4f;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 17%;
+    border: 1px solid #484f4f;
+    cursor: pointer;
+    width: 80px;
+    height: 45px;
+    margin-left: 90%;
+}
+
+/* Styling the list button*/
+.list-btn{
+    background-color: #484f4f;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 17%;
+    border: 1px solid #484f4f;
+    cursor: pointer;
+    width: 80px;
+    height: 45px;
+    margin-left: 82%;
+}
+
+/* Styling the form*/
+.myform{
+    width: 50%;
+    margin: 70px auto;
+}
+.myform div{
+    position: relative;
+}
+.myform div .message{
+    position: absolute;
+    background-color: #fefbd8;
+    width: 152px;
+    height: 35px;
+    border: 1px solid #bc5a45;
+    right: -150px;
+    top: 1px;
+    color: red;
+    text-indent: 5px;
+    line-height: 32px;
+    font-size: 18px;
+    display: none;
+}
+.myform input,
+.myform textarea,
+.myform .myfile{
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+.myform input[type="text"],
+.myform input[type="password"],
+.myform input[type="email"],
+.myform textarea{
+    font-size: large;
+}
+.myform input[type="submit"]{
+    margin: auto;
+    width: 60%;
+    cursor: pointer;
+    font-size: larger;
+    text-align: center;
+}
+.myform input[type="file"]{
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+.myform .myfile{
+    padding: 0px;
+    background-color: #c83349;
+    color: wheat;
+    font-size: larger;
+    text-align: center;
+    width: 70%;
+    position: relative;
+    cursor: pointer;
+}
+.myform .myfile span{
+    position: absolute;
+    top: 23%;
+    left: 2.5%;
+}
+.myform .tags .the-tag{
+    display: inline-block;
+    margin: 4px;
+    padding: 3px 4px;
+    border: 2px solid #BC5A45;
+    background-color: #fefbd8;
+    color: #551A8B;
+    font-weight: bolder;
+    font-size: 17px;
+    font-family: cursive;
+}
+.myform .tags .the-tag .deltag{
+    color: black;
+    cursor: pointer;
+}
+
+/* Styling the cards*/
+.cards{
+    position: relative;
+    z-index: 1;
+    width: 75%;
+    margin: 30px auto;
+    padding: 60px;
+    min-height: 300px;
+}
+.card{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+}
+.card-one{
+    background-color: #c83349;
+}
+.card-two{
+    background-color: #622569;
+}
+.card-three{
+    background-color: #ffcc5c;
+}
+.card-four{
+    background-color: #588c7e;
+}
+.card-five{
+    background-color: #87bdd8;
+}
+
+/* Styling the thanks pragraph*/
+.typer{
+    margin: 100px;
+    padding: 20px;
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: bold;
+}
